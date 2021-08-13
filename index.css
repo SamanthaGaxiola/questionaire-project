@@ -1,0 +1,99 @@
+.form-page {
+  height: 400px;
+  width: 400px;
+  border-style: solid;
+  box-shadow: 5px 10px plum;
+  background-color: rgba(250, 235, 215, 0.338);
+  border-width: 1px;
+  border-color: rgba(0, 0, 0, 0);
+  border-radius: 20px;
+  margin-left: 400px;
+}
+.difficultypart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  font-family: 'Righteous', cursive;
+}
+.numberofquestions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+  font-family: 'Righteous', cursive;
+}
+.category {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+  font-family: 'Righteous', cursive;
+}
+
+.button {
+  background-color: plum;
+  color: antiquewhite;
+  border-radius: 25px;
+  padding: 15px 15px;
+  border: none;
+  font-family: 'Righteous', cursive;
+  cursor: pointer;
+  margin-left: 170px;
+}
+
+.form-page2 {
+  margin-top: 30px;
+  height: 400px;
+  width: 400px;
+  border-style: solid;
+  box-shadow: 5px 10px plum;
+  background-color: rgba(250, 235, 215, 0.338);
+  border-width: 1px;
+  border-color: rgba(0, 0, 0, 0);
+  border-radius: 20px;
+  margin-left: 400px;
+}
+#question {
+  font-size: 20px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-self: center;
+  justify-content: center;
+  margin-bottom: 50px;
+  margin-top: 60px;
+  margin-left: 15px;
+  font-family: 'Righteous', cursive;
+}
+.answer-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-area: 'a b' 'c d';
+  row-gap: 15px;
+}
+.answer {
+  height: 70px;
+  width: 155px;
+  font-size: 15px;
+  font-family: 'Righteous', cursive;
+  color: antiquewhite;
+  background-color: plum;
+  border: none;
+  box-shadow: 5px 5px rgba(242, 228, 209, 0.982);
+  border-radius: 40px;
+  cursor: pointer;
+  justify-self: center;
+}
+.continue {
+  background-color: plum;
+  color: antiquewhite;
+  border-radius: 25px;
+  padding: 15px 15px;
+  border: none;
+  font-family: 'Righteous', cursive;
+  cursor: pointer;
+  margin-left: 165px;
+  margin-top: 15px;
+}
