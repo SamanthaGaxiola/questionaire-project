@@ -6,7 +6,7 @@ var allQuestions = []
 window.addEventListener('DOMContentLoaded', () => {
   //this is for when the page loads
   getCategories(updateCategorySelect)
-  //   getDifficulty(updateDifficultySelect)
+    getDifficulty(updateDifficultySelect)
 
   const form = document.querySelector('form')
 
@@ -41,17 +41,17 @@ function startGame(questions) {
   var questionString = document.querySelector('#question')
   questionString.innerHTML = firstQuestion.question
 
-  // firstQuestion.forEach((element) => console.log(element))
+  firstQuestion.forEach((element) => console.log(element))
 
   var listofAnswers = [
     ...firstQuestion.incorrect_answers,
     firstQuestion.correct_answer,
-//   ]
-//   function shuffle(arr){
-//   for (let i = listofAnswers.length -1; i > 0; i--) {
-//     const j = Math.floor(Math.random() * (i +1))
-//     [arr[i]], [arr[j]] = [arr[j]], [arr[i]]
+  ]
+  function shuffle(arr){
+  for (let i = listofAnswers.length -1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i +1))
+    [arr[i]], [arr[j]] = [arr[j]], [arr[i]]
 
-//     document.querySelector(`#answer${i}`).innerHTML = listofAnswers[i]
-//   }
-// }
+    document.querySelector(`#answer${i}`).innerHTML = listofAnswers[i]
+  }
+
